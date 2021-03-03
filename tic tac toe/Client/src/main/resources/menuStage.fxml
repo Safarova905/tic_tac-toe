@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane id="waiting" style="-fx-background-color: white;" visible="false">
+         <center>
+            <Label style="-fx-background-color: white;" text="Waiting" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <VBox id="rooms_menu" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox prefHeight="30.0" prefWidth="200.0">
+               <children>
+                  <Button id="createBtn" mnemonicParsing="false" text="Create" />
+                  <TextField id="roomName" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </padding>
+      </VBox>
+   </children>
+</StackPane>

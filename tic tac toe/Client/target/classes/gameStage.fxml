@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.itis.client.GameStageController">
+   <center>
+      <GridPane prefHeight="450.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView id="tile_0_0" fx:id="tile_0_0" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#placeSign_0_0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView id="tile_1_0" fx:id="tile_1_0" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#placeSign_0_1" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+            <ImageView id="tile_2_0" fx:id="tile_2_0" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#placeSign_0_2" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+            <ImageView id="tile_0_1" fx:id="tile_0_1" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#placeSign_1_0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+            <ImageView id="tile_1_1" fx:id="tile_1_1" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#placeSign_1_1" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ImageView id="tile_2_1" fx:id="tile_2_1" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#placeSign_1_2" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <ImageView id="tile_0_2" fx:id="tile_0_2" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#placeSign_2_0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
+            <ImageView id="tile_1_2" fx:id="tile_1_2" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#placeSign_2_1" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ImageView id="tile_2_2" fx:id="tile_2_2" fitHeight="150.0" fitWidth="150.0" onMouseClicked="#placeSign_2_2" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </center>
+   <right>
+      <VBox nodeOrientation="RIGHT_TO_LEFT" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Button fx:id="exit_btn" mnemonicParsing="false" text="Exit" />
+            <Label id="status">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </right>
+</BorderPane>
